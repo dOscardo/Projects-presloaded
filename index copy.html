@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body class="bg-gray-50 text-gray-900 font-sans min-h-screen flex flex-col">
+    <!-- Top Header Navigation -->
+    <header class="w-full bg-white px-6 py-6 md:px-10 flex items-center justify-between">
+      <div class="flex items-center space-x-12">
+        <a href="#">
+          <img src="images/logo.svg" alt="Snap Logo" class="h-5" />
+        </a>
+
+        <nav class="hidden md:flex items-center space-x-8 text-sm text-gray-500 font-medium">
+          <div class="relative group cursor-pointer flex items-center space-x-2 hover:text-black transition">
+            <span>Features</span>
+            <img src="images/icon-arrow-down.svg" alt="" class="w-2.5 h-1.5" />
+          </div>
+          <div class="relative group cursor-pointer flex items-center space-x-2 hover:text-black transition">
+            <span>Company</span>
+            <img src="images/icon-arrow-down.svg" alt="" class="w-2.5 h-1.5" />
+          </div>
+          <a class="hover:text-black transition" href="#">Careers</a>
+          <a class="hover:text-black transition" href="#">About</a>
+        </nav>
+      </div>
+
+      <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-500">
+        <button class="hover:text-black transition cursor-pointer">Login</button>
+        <button
+          class="border-2 border-gray-500 hover:border-black hover:text-black px-5 py-2 rounded-xl transition cursor-pointer"
+        >
+          Register
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Container Frame with Outer Border -->
+    <main class="flex-1 max-w-6xl mx-auto my-8 p-6 md:p-10 border-1 border-indigo-500 rounded-3xl shadow-2xl flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+      
+      <!-- Left Content Column (Green Border) -->
+      <div class="flex-1 flex flex-col justify-between items-start space-y-8 md:space-y-12 text-left p-6 border-2 border-emerald-500 rounded-2xl">
+        
+        <div class="space-y-6">
+          <h1 class="text-4xl md:text-7xl font-bold tracking-tight text-black leading-tight">
+            Make <br class="hidden md:inline" />remote work
+          </h1>
+          <p class="text-gray-500 text-base md:text-lg max-w-md leading-relaxed">
+            Get your team in sync, no matter your location. Streamline processes,
+            create team ritual, and watch productivity soar.
+          </p>
+        </div>
+
+        <div>
+          <button
+            class="bg-black text-white font-bold py-3.5 px-7 rounded-2xl border-1 border-black hover:bg-transparent hover:text-black transition cursor-pointer"
+          >
+            Learn more
+          </button>
+        </div>
+
+        <!-- Logos Row (Cyan Top Border) -->
+        <div class="w-full flex items-center justify-between md:justify-start space-x-6 md:space-x-10 pt-6 border-t-2 border-cyan-500">
+          <img src="images/client-databiz.svg" alt="databiz" class="h-4 md:h-5 object-contain" />
+          <img src="images/client-audiophile.svg" alt="audiophile" class="h-4 md:h-5 object-contain" />
+          <img src="images/client-meet.svg" alt="meet" class="h-4 md:h-5 object-contain" />
+          <img src="images/client-maker.svg" alt="maker" class="h-4 md:h-5 object-contain" />
+        </div>
+      </div>
+
+      <!-- Right Image Column (Amber/Yellow Border) -->
+      <div class="flex-1 flex justify-center md:justify-end p-6 border-1 border-amber-500 rounded-2xl">
+        <img
+          class="w-full max-w-md md:max-w-none md:w-[480px] object-contain"
+          src="images/image-hero-desktop.png"
+          alt="Hero Illustration"
+        />
+      </div>
+    </main>
+  </body>
+</html>

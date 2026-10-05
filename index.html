@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="a/images/favicon-32x32.png"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body class="bg-white">
+    <!-- hero section -->
+    <div
+      class="bg-white-500 mx-15 my-30 border-2 border-black-500 rounded-lg shadow-lg h-6/10"
+    >
+      <!-- logo-->
+      <div
+        class="flex items-center justify-between w-full mb-12 md:mb-20 p-7 border-3 border-blue-200"
+      >
+        <img src="images/logo.svg" alt="" />
+        <!-- nav bar -->
+        <nav class="flex space-x-5 text-md font-medium text-gray-500">
+          <div class="flex items-center space-x-1 hover:text-black transition">
+            <span>Feature</span> <img src="images/icon-arrow-down.svg" alt="" />
+          </div>
+          <div
+            class="relative group cursor-pointer flex items-center space-x-1 hover:text-black transition"
+          >
+            <span>Company</span> <img src="images/icon-arrow-down.svg" alt="" />
+          </div>
+          <a class="hover:text-black transition" href="#">Careers</a>
+          <a class="hover:text-black transition" href="#">About</a>
+        </nav>
+        <!-- login & register -->
+        <div class="flex items-center space-x-6 text-sm font-medium">
+          <button>Login</button>
+          <button
+            class="border-2 border-black rounded-md hover:text-black transition"
+          >
+            Register
+          </button>
+        </div>
+      </div>
+
+      <!-- container -->
+      <div class="flex justify-between border-2 border-blue-400 m-10">
+        <!-- first hero- -->
+        <div class="border-2 border-blue-100 mx-10 my-20 content-end content-between space-y-20">
+          <div>
+            <h1 class="text-7xl font-large font-bold">Make</h1>
+            <h1 class="text-7xl font-large font-bold">remote work</h1>
+          </div>
+          <div class="">
+            <p class="text-lg text-gray-600">
+              Get your team in sync no matter your location.
+            </p>
+            <p class="text-lg text-gray-600">
+              streamline processes, create team rituals and
+            </p>
+            <p class="text-lg text-gray-600">watch productivity soar</p>
+          </div>
+
+          <button
+            class="bg-black text-white py-2 px-4 rounded-md hover:bg-gray-600 transition"
+          >
+            Learn more
+          </button>
+          <div class="flex items-center space-x-6 text-sm font-medium mt-20">
+            <img src="images/client-databiz.svg" alt="databiz" />
+            <img src="images/client-audiophile.svg" alt="audiophile" />
+            <img src="images/client-meet.svg" alt="meet" />
+            <img src="images/client-maker.svg" alt="maker" />
+          </div>
+        </div>
+        <!-- second hero section -->
+        <img class="w-1/2 m-10" src="images/image-hero-desktop.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
